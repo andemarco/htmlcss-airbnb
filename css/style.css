@@ -13,7 +13,8 @@
   height: 33%;
   width: 25%;
   position: relative;
-  margin:5px;
+  margin:7px;
+  font-size: 5vh;
 }
 
 .box.terlizzi {
@@ -39,6 +40,7 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  /* z-index: 1; */
 }
 
 .city_name{
@@ -46,4 +48,15 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  font-family: 'Lobster', cursive;
+  z-index: 2
+}
+
+.layover:hover, .city_name:hover {
+  display: none;
+  cursor: pointer;
+}
+
+.box:hover  {
+  cursor: pointer;
 }
