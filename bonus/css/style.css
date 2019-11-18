@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 82px;
+  background-color: #FF666B;
+  z-index: 3;
+}
+
+ul.menu {
+  list-style: none;
+  line-height: 80px;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 23px;
+  color: white;
+}
+
+ul.menu a {
+  text-decoration: none;
+  text-decoration-color: none;
+  color: white;
+}
+
+ul.menu li {
+  display: inline-block;
+  padding-left: 7px;
+  padding-right: 7px;
+  vertical-align: top;
+}
+
+.logo {
+  display: inline-block;
+  height: 80px;
+}
+
+main {
+  height: 1500px;
+  width: 1433px;
+  margin: 0 auto;
+}
+
+.box {
+  bottom: 0;
+  height: 33%;
+  width: 33%;
+  background-color: red;
+  position: relative;
+  left: 50%;
+  top: 84px;
+  transform: translateX(-50%);
+}
+
+.layover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box.terlizzi {
+  background-image: url(../img/Terlizzi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box.corato {
+  background-image: url(../img/corato.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box.trani {
+  background-image: url(../img/trani.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.city_name{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Lobster', cursive;
+  text-shadow: 2px 2px 3px black;
+  text-transform: uppercase;
+  z-index: 2;
+  font-size: 45px;
+}
+
+ul.menu li.active {
+  border-bottom: 2px solid black;
+}
+ul.menu li:hover {
+  background-color: lightpink;
+  border-bottom: 2px solid black;
+}
+
+.box:hover .layover {
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+footer {
+  border-top: solid 2px #FF666B;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  margin-top: 84px;
+  line-height: 40px;
+  background-color: #FF666B;
+  text-shadow: 2px 2px 3px white;
+  font-size: 20px;
+}
